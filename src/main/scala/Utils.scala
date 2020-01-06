@@ -1,4 +1,4 @@
-import scala.Array.{canBuildFrom, fallbackCanBuildFrom}
+//import scala.Array.{canBuildFrom, fallbackCanBuildFrom}
 import scala.collection.mutable
 import scala.math.BigInt.{int2bigInt, long2bigInt}
 
@@ -154,14 +154,14 @@ object Utils {
     io.Source.fromFile(input).mkString
   }
 
-  def parseMatrix[N](numParser: String => N): Seq[Seq[N]] = {
-    parseInput(_ split "\\s" map numParser)
-  }
-
-  def parseInput[A](lineParser :String => A) :Seq[A] = {
-    io.Source.fromFile("input.txt").mkString.split("\\n") map
-      (_.trim()) map lineParser
-  }
+//  def parseMatrix[N](numParser: String => N): Seq[Seq[N]] = {
+//    parseInput(_ split "\\s" map numParser)
+//  }
+//
+//  def parseInput[A](lineParser :String => A) :Seq[A] = {
+//    io.Source.fromFile("input.txt").mkString.split("\\n") map
+//      (_.trim()) map lineParser
+//  }
 
   def factorSizes(n :Int) = {
     val sq = math.sqrt(n).toInt
